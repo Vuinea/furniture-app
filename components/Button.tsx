@@ -9,12 +9,12 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
-const colorShades = {
-  // have to make this a string so that the argument and the key match
-  "light": "300",
-  "normal": "500",
-  "dark": "700",
-};
+  const colorShades = {
+    // have to make this a string so that the argument and the key match
+    light: "300",
+    normal: "500",
+    dark: "700",
+  };
 
 export default function Button({
   children,
@@ -25,11 +25,11 @@ export default function Button({
   onClick,
 }: ButtonProps) {
 
+  const mainClsName = `btn-${variant}-${shade}`;
+  
   return (
     <button
-      className={`p-2 bg-${variant}-${colorShades[shade]} ${
-        shade === "light" && "text-slate-900"
-      } rounded-sm inline-block ${className}`}
+      className={`btn ${mainClsName} ${className}`}
       type={type || "button"}
       onClick={onClick}
     >
