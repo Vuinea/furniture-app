@@ -22,7 +22,8 @@ export default function BaseApp(props: BaseAppProps) {
   return (
     <div className="w-screen h-screen bg-slate-900 text-slate-200 flex flex-row">
       <Navbar open={open} handleClose={handleClose} />
-      <div className="ml-4">
+      <div className="ml-4 w-full h-full">
+        {/* TODO: add the search bar right here */}
         {props.children}
       </div>
     </div>
