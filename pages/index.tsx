@@ -19,13 +19,13 @@ const Home: NextPage = () => {
         <div className="mt-6 text-lg text-center max-w-3xl mx-auto">
           <p className="text-slate-500">
             Furniture can all look the same with unclear quality. That's why
-            we're here to give you{" "}
+            we're here to give you <br />
             <span className="text-primary-300 font-medium">
-              high quality, unique
+              high quality, unique, and practical
             </span>{" "}
             furniture to suit your needs.
           </p>
-          <Link passHref href='/products'>
+          <Link passHref href="/products">
             <a className="btn btn-primary mt-3 capitalize">see our products</a>
           </Link>
         </div>

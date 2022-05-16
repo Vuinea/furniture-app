@@ -3,6 +3,8 @@ import BaseApp from '../../components/BaseApp'
 
 export default function Products() {
   return (
-    <BaseApp>All Products</BaseApp>
+    <BaseApp withSearchbar>
+      
+    </BaseApp>
   )
 }

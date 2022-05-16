@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Button from '../components/Button';
+import Button from "../components/Button";
 
 interface StyledLinkProps {
   href: string;
@@ -14,9 +14,9 @@ export default function StyledLink(props: StyledLinkProps) {
   return (
     <Link passHref href={props.href}>
       <a
-        className={`${props.underline && "underline underline-offset-2"} ${
-          props.hoverUnderline && "hover:underline hover:underline-offset-2"
-        } ${props.className}`}
+        className={`${props.underline ? "underline underline-offset-2" : ""} ${
+          props.hoverUnderline ? "hover:underline hover:underline-offset-2" : ""
+        } ${props.className ? props.className : ""}`}
       >
         {props.children}
       </a>

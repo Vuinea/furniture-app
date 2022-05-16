@@ -14,7 +14,7 @@ export default function Navbar(props: NavbarProps) {
     <aside
       className={`${
         props.open || "hidden"
-      } h-screen lg:w-48 sm:w-full shadow-xl bg-inherit text-inherit top-0 left-0`}
+      } h-screen lg:w-56 sm:w-full shadow-xl bg-inherit text-inherit top-0 left-0`}
     >
 
       <MediaQuery largerThan={'sm'} styles={{ display: 'none' }}>
