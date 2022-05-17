@@ -11,7 +11,7 @@ export default function SearchResult({ product }: SearchResultProps) {
   const { name, imgPath } = product;
   return (
     <Link href="#" passHref>
-      <a className="flex gap-3 items-center w-full p-3 hover:bg-slate-700 text-md font-semibold">
+      <a className="flex gap-3 items-center w-full p-3 hover:bg-gray-200 hover:dark:bg-slate-700 text-md font-semibold">
         <Image
           width={70}
           height={70}

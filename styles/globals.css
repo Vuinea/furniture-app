@@ -11,81 +11,74 @@
 
 @layer components {
   .btn {
-    @apply p-3 rounded-md inline-block select-none font-medium
+    @apply p-3 rounded-md inline-block select-none font-medium;
   }
 
   .btn-primary {
-    @apply bg-primary-500 active:ring active:ring-primary-300
+    @apply bg-primary-500 focus:ring focus:ring-primary-300;
   }
 
   .btn-primary-outline {
-    @apply bg-inherit border-primary-300 border-2 text-primary-300
+    @apply bg-inherit border-primary-300 border text-primary-300 transition-colors hover:bg-primary-500 hover:text-white hover:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-600;
   }
 
   .btn-primary-normal {
-    @apply bg-primary-500 active:ring active:ring-primary-300
+    @apply bg-primary-500 focus:ring focus:ring-primary-300;
   }
 
   .btn-primary-light {
-    @apply text-slate-700 bg-primary-300 active:ring active:ring-primary-500
+    @apply text-slate-700 bg-primary-300 focus:ring focus:ring-primary-500;
   }
 
   .btn-primary-dark {
-    @apply bg-primary-700 active:ring active:ring-primary-900
+    @apply bg-primary-700 focus:ring focus:ring-primary-900;
   }
 
-
-
   .btn-secondary {
-    @apply bg-secondary-500 active:ring active:ring-secondary-300
+    @apply bg-secondary-500 focus:ring focus:ring-secondary-300;
   }
 
   .btn-secondary-normal {
-    @apply bg-secondary-500 active:ring active:ring-secondary-300
+    @apply bg-secondary-500 focus:ring focus:ring-secondary-300;
   }
 
   .btn-secondary-light {
-    @apply text-slate-700 bg-secondary-300 active:ring active:ring-secondary-500
+    @apply text-slate-700 bg-secondary-300 focus:ring focus:ring-secondary-500;
   }
 
   .btn-secondary-dark {
-    @apply bg-secondary-700 active:ring active:ring-secondary-900
+    @apply bg-secondary-700 focus:ring focus:ring-secondary-900;
   }
 
-
-
-
   .btn-danger {
-    @apply bg-danger-500 active:ring active:ring-danger-300
+    @apply bg-danger-500 focus:ring focus:ring-danger-300;
   }
 
   .btn-danger-normal {
-    @apply bg-danger-500 active:ring active:ring-danger-300
+    @apply bg-danger-500 focus:ring focus:ring-danger-300;
   }
 
   .btn-danger-light {
-    @apply text-slate-700 bg-danger-300 active:ring active:ring-danger-500
+    @apply text-slate-700 bg-danger-300 focus:ring focus:ring-danger-500;
   }
 
   .btn-danger-dark {
-    @apply bg-danger-700 active:ring active:ring-danger-900
+    @apply bg-danger-700 focus:ring focus:ring-danger-900;
   }
 
-
   .btn-success {
-    @apply bg-success-500 active:ring active:ring-success-300
+    @apply bg-success-500 focus:ring focus:ring-success-300;
   }
 
   .btn-success-normal {
-    @apply bg-success-500 active:ring active:ring-success-300
+    @apply bg-success-500 focus:ring focus:ring-success-300;
   }
 
   .btn-success-light {
-    @apply text-slate-700 bg-success-300 active:ring active:ring-success-500
+    @apply text-slate-700 bg-success-300 focus:ring focus:ring-success-500;
   }
 
   .btn-success-dark {
-    @apply bg-success-700 active:ring active:ring-success-900
+    @apply bg-success-700 focus:ring focus:ring-success-900;
   }
-
 }
