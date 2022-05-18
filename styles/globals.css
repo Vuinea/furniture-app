@@ -19,7 +19,9 @@
   }
 
   .btn-primary-outline {
-    @apply bg-inherit border-primary-300 border text-primary-300 transition-colors hover:bg-primary-500 hover:text-white hover:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-600;
+    @apply bg-inherit dark:border-primary-300 border-primary-500 border text-primary-500 dark:text-primary-300  transition-colors 
+    hover:bg-primary-500 hover:text-white hover:border-primary-500 
+    focus:outline-none focus:ring-2 focus:ring-primary-600;
   }
 
   .btn-primary-normal {
