@@ -9,7 +9,7 @@ export default function SaleProduct(props: Product) {
 
   return (
     <div className="h-60 w-60 border border-slate-300 border-b-0 dark:border-none">
-      <Image layout="responsive" width={100} height={100} src={props.imgPath} />
+      <Image layout="responsive" width={100} height={100} src={props.imgPath} alt={props.name} />
 
       <div className="pt-4 pb-0 dark:bg-slate-800 border border-slate-300 border-t-0 dark:border-none">
         <div className="p-2">

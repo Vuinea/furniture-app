@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head';
 import Product from '../../data/products/Product';
 import BaseApp from '../BaseApp'
 import ProductList from '../productList/ProductList'
@@ -10,8 +11,13 @@ interface CategoryPageProps {
 
 export default function CategoryPage({ header, products }: CategoryPageProps) {
   return (
-    <BaseApp withSearchbar header={header}>
-      <ProductList products={products} />
-    </BaseApp>
+    <>
+      <Head>
+        <title>Oasis Furniture - {header}</title>
+      </Head>
+      <BaseApp withSearchbar header={header}>
+        <ProductList products={products} />
+      </BaseApp>
+    </>
   );
 }
