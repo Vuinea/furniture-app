@@ -1,6 +1,8 @@
 import React from 'react'
-import BaseApp from '../../components/BaseApp'
+import useProductsByCategory from "../../utils/useProductsByCategory";
+import CategoryPage from "../../components/categoryPage/CategoryPage";
 
 export default function DiningRoom() {
-  return <BaseApp withSearchbar>DiningRoom</BaseApp>;
+  const products = useProductsByCategory("diningRoom")
+  return <CategoryPage products={products} header="Dining Room" />;
 }

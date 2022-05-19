@@ -1,6 +1,10 @@
 import React from 'react'
-import BaseApp from '../../components/BaseApp'
+import useProductsByCategory from '../../utils/useProductsByCategory';
+import CategoryPage from '../../components/categoryPage/CategoryPage';
 
 export default function BedRoom() {
-  return <BaseApp withSearchbar header='Bed Room'>Bed Room</BaseApp>;
+  const products = useProductsByCategory('bedRoom')
+  return (
+      <CategoryPage products={products} header="Bed Room" />
+    );
 }

@@ -1,13 +1,10 @@
 import React from 'react'
 import useProducts from "../../hooks/useProducts";
-import BaseApp from '../../components/BaseApp'
-import ProductList from '../../components/productList/ProductList';
+import CategoryPage from '../../components/categoryPage/CategoryPage';
 
 export default function Products() {
   const products = useProducts();
   return (
-    <BaseApp withSearchbar header='all products'>
-      <ProductList products={products} />
-    </BaseApp>
+    <CategoryPage products={products} header='all products' />
   )
 }

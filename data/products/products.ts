@@ -7,6 +7,7 @@ const products: Product[] = [
     imgPath: "/green_couch.jpg",
     currentPrice: 150,
     fullPrice: 200,
+    categories: ["livingRoom"],
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const products: Product[] = [
     imgPath: "/black_chair.jpg",
     currentPrice: 75,
     fullPrice: 100,
+    categories: ["livingRoom", "diningRoom"],
   },
   {
     id: 3,
@@ -21,6 +23,7 @@ const products: Product[] = [
     imgPath: "/dresser.jpg",
     currentPrice: 65.5,
     fullPrice: 150,
+    categories: ["bedRoom"],
   },
   {
     id: 4,
@@ -28,6 +31,7 @@ const products: Product[] = [
     imgPath: "/lamp.jpg",
     currentPrice: 70,
     fullPrice: 70,
+    categories: ["livingRoom", "bedRoom"],
   },
 ];
 
